@@ -23,6 +23,7 @@ docker volume'u ve port yönledirmeyi yapalım
  konsol ekranına giriş yapınca
 
     ionic cordova build android --prod --no-interactive --release
+     ionic cordova build ios --prod
 
 yada
 ## web üzerinden çalıştırma
