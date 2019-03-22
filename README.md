@@ -16,3 +16,4 @@ oluşturduğumuz image'a tag ekleyelim
 docker volume'u ve port yönledirmeyi yapalım
 
     docker run -it -p 8100:8100 -v $(pwd)/app:/usr/src/app zin/ionic.1
+docker run -ti --rm -p 8100:8100 -p 35729:35729 -v /app:/myApp:rw zin/ionic.1
