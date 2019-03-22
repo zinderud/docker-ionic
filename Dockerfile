@@ -7,6 +7,5 @@ WORKDIR /usr/src/app
 # Install Ionic and Cordova
 RUN npm i -g ionic cordova
 RUN ionic --no-interactive config set -g daemon.updates false
-
-# Show ionic cli command
-CMD ["ionic"]
+WORKDIR /usr/src/app/app
+CMD npm run start
