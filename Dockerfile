@@ -68,6 +68,9 @@ ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:/opt/gradl
 RUN yes Y | ${ANDROID_HOME}/tools/bin/sdkmanager "build-tools;25.0.2" "platforms;android-25" "platform-tools"
 RUN cordova telemetry off
 
-WORKDIR Sources
+
+WORKDIR /usr/src/app
+
+COPY . .
 EXPOSE 8100 35729
 CMD ["ionic", "serve"]
