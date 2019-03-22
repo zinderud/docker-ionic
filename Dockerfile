@@ -73,4 +73,4 @@ WORKDIR /usr/src/app
 
 COPY . .
 EXPOSE 8100 35729
-CMD ["ionic", "serve"]
+CMD ["ionic"]
