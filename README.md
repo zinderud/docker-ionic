@@ -18,7 +18,7 @@ oluşturduğumuz image'a tag ekleyelim
     docker tag 0c423c0d3cc4 zinderud/ionic.1
 docker volume'u ve port yönledirmeyi yapalım
 
-    docker run -it -p 8100:8100 -p 35729:35729  -v $(pwd)/app:/usr/src/app zinderud/ionic.1 bash
+    docker run -it -p 8100:8100 -p 35729:35729  -v  $(pwd)/app:/usr/src/app zinderud/ionic.1 bash
  
  konsol ekranına giriş yapınca
 

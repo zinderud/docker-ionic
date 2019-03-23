@@ -71,6 +71,6 @@ RUN cordova telemetry off
 
 WORKDIR /usr/src/app
 
-COPY . .
+# COPY . .
 EXPOSE 8100 35729
 CMD ["ionic"]
